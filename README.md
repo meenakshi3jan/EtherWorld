@@ -1,248 +1,67 @@
-# Execution Layer Meeting 174 [2023-11-09]
+# Ethereum Cat Herders Meeting #122 #381
 
+### Meeting Date/Time: November 22, 2023
+### Meeting Duration:  23 mins
+### Moderator: Pooja Ranjan
+### [GitHub Agenda] (https://github.com/ethereum-cat-herders/PM/issues/381)
+### [ Audio Video of the Meeting]: (https://www.youtube.com/watch?v=SmrA5dS-UlY)
+### Next Meeting Date/Time: Dec 05 2023 at 15:00 UTC
+### Meeting Notes: Meenakshi Singh
 
-### Meeting Date/Time: Nov 9, 2023, 14:00-15:30 UTC
-### Meeting Duration: 60 Mins
-### Moderator: Tim Beiko
-###  [ GitHub Agenda] (https://github.com/ethereum/pm/issues/895)
 
-### [Audio Video of the Meeting](https://www.youtube.com/watch?v=TQ2XEvMzvFg) 
 
+**PoojaRanjan** [00:00](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=0s): Welcome to Ethereum Cat Herders Meeting #122. This is issue no #381 on Ethereum Cat Herders PM Repo. So we have our usual item starting with Ethereum Network Upgrades. We will provide some protocol development and research updates. Events fellowship Hackathons as shared by the community and a few initiatives and associations with respect to teams discussion and some general updates and discussions. 
 
+## 1. Ethereum network upgrades
+So for the first item here we have Cancun and Deneb Upgrade. From the last All Core Dev Execution meeting which happened about two weeks ago. The developers shared that Goerly Shadow Fork 0 went live on November 6th and the timing was 3:31p.m. UTC. The Dencun Fork happened on the Shadow Fork on Epoch 20 after it went live. They started with a new Beacon chain and 24 nodes were active. They noted a regular Spike here and there and no unexpected issues. Main thing to analyze on that was the amount of time to build payload and the details of analysis are available on report shared by the team. I'm just trying to make sure we have added the link to that. Okay so we will add the link to the Goerli Shadowfork 0 analysis here in the meeting agenda. There was a Devconnect event going on in the last week. And despite being in the Devconnect,  in real life meeting,  consensus layer developers joined for the prescheduled meeting of the ACDC All Core Dev Consensus meeting last Thursday. And the update shared on that meeting was that Devnet #12 is perhaps planned this week and specs for devnet 12 will be added to ECH website. Hive testing was conducted. And some more testings are planned. They are ready on block Builders and blobbers added test cases on blobbers. Basically, the testing is ready but more they can have is good. Goerli public testnet Fork is not scheduled yet but we can expect it sometimes in mid December. We did not have any interop testing call planned last week. So the video you find here is from the last meeting. And in terms of other useful resources we have added changes included to the network upgrade in Dencun on Ethereum Cat Herders Website. It's ethereumcatherders.com/dencun/ .  You can perhaps take a look and check out the updates with respect to devnets since Inception and other useful resources is added here. We have also added the PEEPanEIP playlist of Dencun which contains the talk of all nine EIP’s and a few other talks around Dencun upgrade with the testing team. 
 
-## Agenda
-## Dencun Updates
+## 2. Other Protocol Development & Research
 
-## Goerli Shadow Fork
+Moving on protocol development and research side. We have our video for Verkle implementers call. Verkle Implementers are moving with the devnet to test the proposals. You can find more about it on the implementors calls added here. 
+Roll call call was planned two weeks ago and I think the next one is planned on December 13th. Yes so the next Roll Call meeting #1 will be planned on December 13 at, 14:00 UTC. People interested may ping Ansgar and Carl or else the recording will be shared on Ethereum protocol YouTube. We did not have any updates on EOF implementers meeting. I haven't seen the video going up but we expect the next meeting of EOF to be on November  29th. 
+## 3. Events, Fellowship, Hackathon
+ETH Berlin is expected next year somewhere around May 24 - 26. Please check out the website if you want to participate in that if you want to participate as a speaker hackathon and participant or maybe just to attend the meeting you will find more information over there. In near future ETH India is planned. tI's expected between December 8 - 10. I'm trying to help our team with some kind of speakers, especially on the protocol side. We hope that this is going to be another wonderful event at ETH global level. So yeah we'll share more updates. 
 
+## 4. New initiative/association/team discussion
+About Chinese subtitle of PEEP Videos, last week we were joined by a user who is here to support us with the description. We do have description. We are just working on how to upload that on YouTube. Hopefully it will be done soon. 
 
-## Add eth_gasPrices; add blobs to eth_feeHistory execution-apis#486
+### Ecosystem Project Demo 
+On ecosystem project demo last week we recorded a talk with the team Kurtosis. Kurtosis provides a testnet environment for ethereum testing team they have helped with the merge upgrade as well as they are helping with the Dencun plus the Verkle team with setting up their devnets. And we may use their sport with the EOF testnets as well. The recording of Kurtosis will be shared shortly. If not this week I am expecting that to be uploaded definitely early next week. 
 
-## Proposal: RPC method to retrieve all of eth_getBlock, eth_gasPrice, eth_maxPriorityFeePerGas, and eth_blobGasPrice
 
+### Meet The Herders, Ep 2 - Victor Zhou
+In the meantime we have shared episode #2 from Meet the Herders. A video link has been added here. We recorded episode with Victor. I think we will get more updates from Haresh here. 
+**Haresh Gedia** [7:26](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=446s): Hey Pooja. So yeah the episode with Victor has been edited and published on channels. We have also put out a brief summary of this on Medium and it's also on Spotify which was done by ZK and the next in line I have some more interview scheduled. So we should have more episodes. I think, in the next two weeks.
+**Pooja Ranjan** [7:58](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=478s): Sounds good. Thank you for that. 
 
 
-  
-**Tim Beiko** [02:23](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=143s): Welcome everyone to ACDE number #174. So we'll cover Dencun today. Some updates on the Goerli Fork, Client updates. There's also some RPC discussion that people wanted to bring up. And then aside from that Guillaume has a Verkle EIP to discuss. And then given its Devconnect next week and US Thanksgiving after that. It makes sense to figure out which calls we want to have in the next couple weeks and whether we want to cancel. So any of them? I guess, to start on the Goerli Shadow Fork. Pari, I believe you shared this analysis. Do you want to give us a quick walk through how things went? 
+## 5. General updates/discussion
+The next item is General updates and discussion. As I can see here we have updated the Twitter, Discord, YouTube, LinkedIn followers users and subscribers here. People who aren't a follower and have not subscribed to it yet. May perhaps follow the link. there should be an invite link added to the agenda and they can get it over there. I don't see George on the call but we had this meeting yesterday. So perhaps I can provide updates on ECH engineering on his behalf. So we have updated ECH website Dencun to include uptill Devnet #11. I am expecting the devnet #12 specs to be uploaded in a day or two over there. We have added a new page which is ethereumcatherders.com/testnets/. So this page of testnet includes the information with respect to the active testnet and deprecated testnets. It will be useful for dapp developers to maybe follow and get the resources here. This also contains the resources of FAUCETS and related website GitHub and the scanners available. So as we know Sepolia is the most active testnet that is recommended for usage right now.  In parallel we are also coming up with Holesky testnet. People can find related FAUCETS and scanners available on the website. And Goerly which is active but we are hoping it to be deprecated by the end of 2023. So users which are still using the Goerli testnet for testing their tabs may want to consider to switch on to Sepolia or Holesky. We should be expecting very few difference between Goerli and Holesky like it's just mainly about changing the network name and perhaps you would be able to get move to the Holesky testnet. I'm hoping to get some  documentation around that that would be useful. But people who would like to create some document to help out other users who may or may not be able to make this switch easily. we welcome them to share their Resources with us. And we'll be happy to add it on the ethereumcatherders.com/testnet/ page for any new users to come and follow. In addition to that as I mentioned we people can also find related information with the KOVAN testnet ROPSTEN,  MORDEN and OLYMPIC. And I think we are now joined by George. I was just sharing information on your behalf on the Ethereum testnet page which went live last week. Anything else you would like to add on testnets. 
+**George Hervey** [11:18](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=678s): Yes. I'm a bit late so when it comes to the testnet page there are a few updates that still need to be made. One is just beautifying a little bit more we're adding some graphics and just anything that looks weird on it which I don't think there are those will be touched up the whole page. And then I believe there's also one deprecated testnet that is still missing that being link be that will be included as well. So I think that's pretty much the updates when it comes to that page. When it comes to the website as a whole we're going to add the devnet version 12 to the Dencun page. And I believe we're going to be making some more updates on the rest of the website with additional Pages as well to be announced soon. 
 
-**Paritosh** [3:18](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=198s): Yeah, so we had a Goerli Shadow fork earlier this week. We basically synced up all the nodes to Goerli heads. Then started a new Beacon chain and forked off a small section of the nodes. So roughly 21 nodes. And afterwards we set the Dencun Forks. So we had we enabled Dencun on Goerli. Since then we've been running Xatu to collect all the metrics so blob arrival times Etc. And the analysis is shared there. I think there's nothing insane that pops out there's a couple of like regular spikes. We're still not 100% sure why? But besides that block processing times. And gossip times look really low but that's also kind of expected considering it's a really small Network. The main takeaway or the thing that we're yet to properly analyze is the amount of time it takes to build payloads Etc doesn't look very high. So we're still getting organic transaction gossip from Goerli. So the question is just is there anything else we should be trying on this network before we delete it? 
 
+**Pooja Ranjan** [12:31](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=751s): Right and if people have any information or anything that they find missing they can perhaps create an issue or maybe add a PR to update the page. We welcome all issues and PR to make the  ethereumcatherders.com page/ website as useful as possible for new users. And yeah as George was mentioning there are a few other page is to be expected there we have a proposed design for Meet the Herder page. Link is added here. We may go for a couple of iterations but we should expect the page added there. So people may find information about this new series in all the platforms at one place. Similarly we are also trying to add another page for ecosystem project demo to get the collection of project information at one place. I think that has to be announced later on. Yeah maybe George if you would like to update with the Learn to Earn thing. I know we have questions and the NFT design is still work in progress. Maybe any updates on UI design or if any help is required.
 
-**Tim Beiko** [4:32](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=272s): Thanks anyone have anything they would like to see on the Shadow Fork. 
 
-**Danny** [4:37](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=277s): Yeah I mean my intuition is given, we're doing the CL networking rework. And given that so far things look stable and you know it's a good test that we probably have what we need. And we're probably going to want to run another one and potentially after we run another one another one at scale but after we have the rework on the consensus layer.
+**George Hervey** [13:57](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=837s): Yeah so it looks like the badges the design on the badges have been continually iterated and will continue to be improved upon and they're starting to look good. When it comes to the application it seems that Morales that were built on the V1 which has been deprecated from their hosting. So will be self-hosting now. And I'll be using mongodb and may require a little bit more work to do but thankfully they have a tutorial on how to set that up. So we should be  okay with that. And it should be up before the actual Dencun update is made which it seems like it will happen in January with the upgrade. So sometime by December we should see the Learn to Earn being up and ready to use. 
 
-**Tim Beiko** [5:00](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=300s): Right this is basically our Baseline uh before that change comes in.
 
-**Danny** [5:05](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=305s): Yeah so I mean as a baseline it sounds like it worked. I don't personally see.  More stuff to do right now.
+**Pooja Ranjan** [15:24](https://www.youtube.com/watch?v=SmrA5dS-UlY&t=924s): So that's all right we would like to get it ready before the upgrade. So people can follow it. So yeah I think we are on track. 
 
+### ECH Operations
+All right moving ahead on ECH operations. So the first item listed here is YouTube shorts. So we have been adding shorts to community playlist. There are two different form that we are using right now. One is like YouTube shorts which is under a minute like 59 seconds and there is another one in which we do not have it as in like under 59 but we keep it within Less than 3 minutes. So people may follow Community playlist to check out the latest shorts added there. We have in the past two weeks we have added two the one is Ethereum's optimistic road map with Mark Mackey and the another one is the future of  Ethereum scaling with the Layer 2 this was a part of talk with the researchers from the Ethereum foundation Ansgar Dietrichs. In addition to that on operations side we have been publishing the ECH podcast regularly. I don't see ZK on the call but we try to update the ethereumcatherders.com/podcast/  page people can find the information with respect to every podcast platform available over there.  Please check it out. The next one is EIPs Insight. So for EIPs Insight web page we have made a slight change here. Let me share that. So as we can see the EIPs Insight  page nw also has this another tab called ERC’s insight. So people can easily switch between two tabs and get information as of now. We see that  one proposal in withdrawn for stagnant to review and one draft on the ERC EIP side and on ERC we have two review and five in last call. People can also find all information added on the Ethereum Improvement Proposal hackmd over here. And that contains the list of EIPs Insight but they have been updated. 
+Moving on to PEEPanEIP and last week we recorded an episode with Sam Wilson on EIP 5069. We hopefully will be releasing its video and podcast version in the upcoming week but I found that talk very interesting and part of them would be used for the next EIPIP meeting. At the moment the process Improvement team are working on EIP and ERC repo split. And we are hoping to add necessary tooling to make sure that both repositories are ready and in this conversation with Sam Wilson we also got a glimpse of what to expect with respect to working group on EIP and ERC side in the future. So I'll highly recommend to  follow this talk if you haven't subscribed to  EthereumCatHerders YouTube. Please do. We will get to notify when this episode is out. In the meantime we also released EIP 4881 with Mark Mackey this is about getting deposit contract snapshot. This EIP reached to final status. It's interesting especially for developers who are working on the beacon chain side. So EIP 4881 could highly be replaced with EIP 6110 in future but until EIP 6110 is live on Ethereum Mainnet. I think consensus layer clients have most of the consensus layer clients have implemented EIP-4881. In the call we were joined by Gajender Singh who was leading Lodestar. And he also mentioned that Lodestar is also considering to implement that proposal in the client. This is an Interface layer proposal and hence it's  not mandatory to be added to the  upgrade. So yeah it was all in all interesting conversation we learned about  some fun facts about deposit contract from 2020. I highly recommend people to check out to learn more about the beacon chain. And we have added the link to the schedule for upcoming meetings on ECH funding. We received eight ether from Epoch one of octant. It has been transferred to carrier multi sek.  Thank you team  Octant and they have also requested us to  share updates on the progress made between Epoch one to maybe able to participate in future Grant round. And that will help us decide or maybe participate on the  next funding round.  I hope to work on the document and may be able to share with the team. I think the deadline is somewhere in December. yeah so we will try to have that updated it December 22. Yes, so we'll try to have that updated before there on this course for validators who may be sharing their earning for public good fundings may consider us for the grant. OP RPGF is live right now and we will get more updates as this round gets concluded. We couldn't participate on Giveth or CLR but Gitcoin Grant Round 19 is open. I am not very confident about our participation. It seems like we needed to reapply for that and I don't see Santosh in the call. So we'll wait for him to provide more updates on that side and for meeting notes. We hope to add all the meeting notes links added to the agenda for people to follow and that pretty much concludes all our agenda item today. Is there  anything else to be shared or discussed? 
 
-**Tim Beiko** [5:11](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=311s): So I guess for the next ones. Do we see value in having it and on Goerli again? Would we want to go straight to mainnet for the next Shadow Fork? Yeah the teams have an opinion about that for devops.
 
-**Paritosh** [5:36](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=336s): I think mainly we prefer continuing Goerli Shadow Fork because it's relatively most of the upgrade changes we're going to notice up here peer to peer Layer and renting more nodes that can support the goerli network is cheaper than renting more nodes for mainnet. We're definitely going to do a mainnet Shadow Fork before we do the official main net for but the question is just do we do that earlier or later.
+Well thank you everyone for  joining us today and for our listeners. Happy Thanksgiving. See you in two weeks. Have a great one Everyone.
 
-**Tim Beiko** [6:01](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=361s): Okay in that
-case I think yeah it probably makes sense to do goerli again as the first one. And if there's no issues then move to mainnet.
 
-
-**Danny** [6:12](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=372s): And yeah I'd be an advocate for that doing a large Goerli after doing a small Goerli then doing a small mainnet, doing a large mainnet but again after we're pass another couple of Devnets with the fix or at least one.
-
-
-**Tim Beiko** [6:28](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=388): Yeah I agree. I would do at least one devet with the final spec changes before we do another Shadow Fork. Does anyone see the need to do another Shadow Fork before that.
-
-**Danny** [7:03](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=423s): Yeah I should just barring unless devops is just trying to strength and devops tooling. I wouldn't continue to do them now. 
-
-
-**Paritosh** [7:14](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=434s): They used to testing in proud we’re fine.
-
-**Tim Beiko** [7:20](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=440s): Nice. Okay anything else on the shadow fork? 
-
-
-
-
-## Add eth_gasPrices; add blobs to eth_feeHistory execution-apis#486
-## Proposal: RPC method to retrieve all of eth_getBlock, eth_gasPrice, eth_maxPriorityFeePerGas, and eth_blobGasPrice
-
-Okay if not so the second thing on the agenda, so there was a PR to add the Blob gas price to eth_feeHistory. And then in the comments there was a proposal to also have a single RPC method that returns all of the gas price related values but maybe. Alexey, do you want to start walking us through your PR and then we can discuss the alternative proposal that was posted in it. 
-
-**Alexey** [8:03](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=483s): 
-Yeah, let me try to present. So let's try to start from a very brief description. What is blob gas and why do we need API for it? So blob gas is like I guess in  addition to regular one, which is used for blobs and is relevant for blob transactions now. And to understand how much, what price maximum price for blob gas is needed to, we mentioned in the transaction. We need to provide some kind of estimation. To include this data after all in to block transaction. Specifically the fill from Blob gas. To do this we can query it through a new endpoint. There are two variations initially is gasPrices was provided and form of this point it's a pretty simple method that returns several various regular gas which can be used like a regular gas cap or the transaction blobGas and maxPriority which can be set as a tip for transaction which started working from EIP #1559 and a simpler version of
-It. If we just return blobGasPrice and it can be used when posting when sending blob transactions. I have no strong preference. I thought that the first approach could be more optimal, because we return this data based on the same structures like Blobs and it could be one method because usually all these values are queried together. But after all we can do just a batched call which can be done quite simply. And my work too another update is for history in addition to regular gas ratio and baseFee per such kind of gas. We could add the same for blob gas. And other fields do not need any change because they like report are about prosthetic. That's an update would like to propose and happy to hear feedback. 
-
-
-**Tim Beiko** [12:36](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=756s): So thank you. Does anyone have thoughts preferences on the various options.
-
-**Alexey** [12:52](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=772s): I would post the link with the examples and description.
-
-
-**Tim Beiko** [13:11](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=791s): Okay so there's a question about whether this already exists in GraphQL. Does anyone
-Know?
-
-**Devconnect** [13:26](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=806s): Pretty unlikely it does not. 
-
-
-**Tim Beiko** [13:28](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=808s): Okay.
-
-**Devconnect** [13:33](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=813s): I mean I shared some thoughts on the PR but I generally would prefer to have eth_blobgasPrice because that sort of follows the pattern that we currently have. And unless there's like a strong reason to do the gasPrices. So I was hoping someone might make an argument for that but as it is, we don't really need to return gasPrice. As far as I know because that's kind of a legacy value we really just need the max_Priority fee and the base fee. And now the Blob gas price. So I would prefer to have it as a separate method and just expect people to batch the RPC request.
-
-
-**Tim Beiko** [14:26](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=866s): Got it and I know, so there were some comments on the agenda in the Discord now for having a single call. Does anyone want to make the case for why batching them in a or why combining them in a single call is better? If not it feels like we should at the very least add blob gas price that seems kind of like a no-brainer. It also seems like a no-brainer to update eth_fee history that also include the data there. How do people feel about merging those two and then if the bundled method maybe doesn't have to be part of the spec. But if clients want to offer it they obviously can just add extra RPC’s. But that at least on the JSON RPC spec we'd have a single method for ETH blob gas price. We'd have the blob values as part of fee history. And then the rest is sort of an optional thing clients can do.  Oh and there's an argument that clients should not do stuff that's not in the specs which unfortunately we can't control what clients do. But I guess, does anyone disagree with merging the single blob gas price method and the changes to fee history. And not having the combined one and worst case we can also always do the combine one later if there's enough demand for it.
-
-
-**Devconnect** [16:18](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=978s): I'm not sure if there is any L2 people or someone who is working with ethers who wanted to chime in since they're the people who are using I guess not. We can try and follow up with those folks, but yeah we'll move with the one method and update in Fee history.
-
-**Tim Beiko** [16:54](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1014s): Okay, anything else on that? Okay if not anything else on Dencun at all that wasn't included on the agenda. 
-
-Okay then next up, Guillaume, you wanted to discuss Verkle proof verification precompile?
-
-
-
-
-## Add EIP: Verkle proof verification precompile EIPs#7926
-
-
- 
-
-**Guillaume** [17:27](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1047s): Yep. So I mean it's more like, I was trying to bring people's attention to it. So it comes from a conversation I had with some people from openZeppelin at first and then other people afterwards. Let me see if I can share my screen. Yeah should Work. So it's really about collecting input. The idea is simple. It's because verkle entails a lot of complex math updating a lot of tools. The idea that came up would be to use a pro verification pre compiles. So offer a pre-compile. So for example Bridges or I forgot the word for L2s but L2 Bridges let's call them or even application developer could verify verkle proofs. So that they don't have to wait for all the libraries like opens Zeppelin like Foundry to get up to speed and like get up to speed and Implement that in in solidity so it's just about adding a simple pre-compile So currently I suggested 0x21 as an address. But yeah of course that can be changed. And the idea is that it receives a chunk of memory that starts with a version bite. And then where where the proof data can be found. Sorry, actually so it first receives a version bite and then a location memory where the proof data can be found along with its size. And also the state root of the tree that the proof is proven against and what the pre-compiled does. So it's upgradeable if we want to move on to different proof system. But if version is zero we use the the standard polynomial commitment scheme, suggested like polynomial commitment scheme based multi proof that was suggested by Dankrad. And otherwise we return one if the proof verifies and zero otherwise and there's also like the EIP also describe gas costs. So I think the model is not really complete. For example, I realize it's missing some data to actually verifying the IP’s approve but that will be updated. But the general idea is you have this constant Point cost that corresponds to every time you need decentralised  commitment. So it's paid for each commitment to get that gas decentralised and then you need to evaluate the Polynomial at some opening point. So you also pay that for each opening you have to do. Yeah there's not much more to that. I mean clearly it's something that needs a lot more input. So that's why I want to bring your attention to it. Of course if there are questions I'm happy to answer but it's more like a call for Code pseudo to pay attention to that. 
-
-
-**Tim Beiko** [21:00](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1260s): There's a hand up by Devconnect Berlin.
-
-**Devconnect Berlin** [21:06](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1266s): Yeah! Hello, this curve is over bandersnatch or sorry like this approving scheme would be over bandersnatch the curve?
-
-**Guillaume** [21:14](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1274s): Benderwagon.
-
-**Devconnect Berlin** [21:16](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1276s):
-Benderwagon. Okay so I guess my question is how it relates to the BLS12 curve and if there's any interplay between those set of precompiles and this 
-One.
-
-**Guillaume** [21:27](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1287s): How does it relate, I mean I forgot which of the two Fields is the one from BLS but otherwise it's my understanding is that it's a completely different curve. I'm not an easy elliptic curve expert but my understanding is that they are different. And so you could potentially, I guess use that precompile that BLS pre-compile but you would have to reimplement all the proving yourself all the commitment. Sorry, the multi proof proving yourself. So, that means that every application developer would have to reimplement that and the goal of this contract is to save some time.
-
-
-**Devconnect** [22:18](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1338s): Right. So we just have pre- compiles for both then because that's something I'd like to do for the next hard Fork is the BLS12 -381 curve. But, it sounds like they're almost similar but not quite exact. 
-
-
-**Guillaume** [22:33](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1353s):  So they are completely different curve?
-
-
-**Dankrad Feist** [22:35](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1355s): Yeah so no this the BLS precompile cannot verify the verkle proofs. We could add a bandersnatch precompile. I think that would actually also make sense probably. I think my preference is actually to have a state verification pre- compile. And the reason is that when we change the state in the future we could make it Backward Compatible. So that smart contracts can be built that verify a part of the state. And you can just upgrade the state commitment and the smart contract could be completely the same. And would so it could be an immutable smart contract. And I think that would be preferable rather than having to have lots of smart contracts upgrade. If we do need to change the state commitment in the future again. 
-
-
-
-**Tim Beiko** [23:50](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1430s): Got it. Danno you had your hand up yeah.
-
-
-**Danno Ferrin** [23:54](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1434s): Yeah. This might be a controversial take on this but I think one of the great things about #4788 as a pre-compile is that, there is EVM code that says this is the pre-compile. This is the canonical answer. So this kind of goes against some of the idea that you know why wait for open Zeppelin to implement this in solidity. What if all pre-compile is going forward that the canonical form is a
-form of solidity or Viper or fee or whatever. And that defines it in modulo gas. You know we're going to have to change a gas schedule on that. And that the clients could do a pre-compile that would optimize that but would truly be a pre-compile at that point there would be an uncompiled version that is the Canonical this is a reference implementation. This is the correct state. It would solve a lot of problems in devs who aren't you know PHD’s in cryptography trying to. Get the small little details of these curves correct when they don't necessarily have a large set of test cases to run against.
-
-
-
-**Tim Beiko** [24:58](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1498s): And so the implication here is you can Implement any of them in solidity basically.
-
-
-
-**Danno Ferrin** [25:06](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1506s): Right and early on when you don't have when you're work doing the next hard work the client you just slide that precompile slide. The EVM in and then when you optimize it you come check if you got some local code it'll always be correct.
-
-
-
-
-**Dankrad Feist** [25:19](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1519s): So this curve specifically will be used for verkle trees anyway, right. So all clients will need I mean we have already created libraries for that. So I mean I think like currently the general position is that client tests never touch the cryptography themselves. Well unless they are really comfortable with it. And that we have readymade libraries and that's already the case for verkle in this case. 
-
-
-
-**Danno Ferrin** [25:47](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1547s): So yeah verkle does kind of change this argument a bit since it's gonna have to be part of the client. But I think it's just an idea I want to put out there for like cryptography not necessary. I was commenting on this. but
-
-**Dankrad Feist** [25:55](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1555s): The idea is good particular EIP.
-
-
-**Tim Beiko** [26:01](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1561s): This is a bit off topic but could we do that for BLS or because I remember like the whole debates around EVM Max were to allow us to build BLS on a one but.
-
-
-**Danno Ferrin** [26:15](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1575s): I know the Epsilon team at one hackathon did through EVM Max the existing precompilers. I don't know if they moved on to BLS12 and using EVM Max. Right.
-
-**Tim Beiko** [26:28](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1588s): Got it. Okay and I assume I guess back to just the original EIP. I assume there's an ETH magicians link people can raise issues there but were there any other questions about the EIP.
-
-
-**Devconnect** [26:52](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1612s): Are there specific implementations you can point to of this like the multi proof PCS.
-
-
-**Guillaume** [26:59](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1619s): The multi proof PCS itself. Yes they are there's, I mean one of them is go verkle the other one is there's a python implementation reference implementation in fact by dankrad. And there's a rust one I think. Oh yeah there might be a nethermind one to a C sharp one by nethermind. But yeah there's no there's no implementation of a pre-compile itself. But it's going to be easy to couple together if that's what you need.
-
-
-**Devconnect** [27:30](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1650s): Yeah just curious maybe toss links to those repos and the ETH magician stand.
-
-**Guillaume** [27:37](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1657s): Sure.
-
-
-**Tim Beiko** [27:41](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1661s): Cool. Anything else on the precompile. Okay, there's a comment around saying they've started implementing BLS at EVMMax and after Devconnect we'll know if it's possible. Anything else people wanted to chat about. I had the call scheduled but there's anything more substantive we can get to that first. If not, next week there's Devconnect. 
-
-## ACDC during Devconnect, US Thanksgiving
-
-So next week we should have had a testing call on Monday and ACDC on Thursday. The people want to keep either of those. Yeah does anyone feel like there's value in having them or should we wait until either the week after just as it heads up that'll be American Thanksgiving on the Thursday.
-
-**Danny** [28:54](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1734s): I was thinking if we don't do the consensus layer call. I might ping on that Thursday the Discord and just ask for like a quick written update from the consensus layer teams on getting through the networking changes. And surface any issues that maybe have arise or unknowns at that point and we could do a similar thing the week after on like Wednesday if we don't do the Thanksgiving call US Thanksgiving call. 
-
-
-**Tim Beiko** [29:20](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1760s): We could also have the call on a Wednesday you know if we want to have one the week after and not skip two weeks in a row. 
-
-
-**Danny** [29:28](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1768s): Well and I guess one of the main things that will come up in that time period is if there are open issues or questions related to this update. So I'm also okay like doing the Ping a couple times and then scheduling an ad hot call if we need it.
-
-**Tim Beiko** [29:49](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1789s): Okay that works for me does anyone have oh Ben?
-
-
-**Ben Edington** [29:56](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1796s): Yeah just interested in signalling. So just delving back into into history when we were planning the capella and the dencun upgrades. We committed, we broke the on pass about delivering both together by committing to doing #4844 as a fast follow on to capella with withrawal. We're talking about June /July time which is amusing in ambitious in Retrospect. But I'm concerned about the Optics you know these week here and week there add up to delay over time. We've seen it time and time again. And I know everyone is working super hard on delivering deneb cancun but because I'm inside the process but from outside the process you know cancelling two core Dev calls in a row doesn't the Optics. Don't look great to me and I'm starting to see things hotting up again on the need to deliver this thing. So that would be my case for keeping the Calls. Obviously there's no point if nobody's going to be here but I think generally that should be our default approach.
-
-**Tim Beiko** [31:12](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1872s): Yeah I'm also, I have less of a strong opinion on the devconnect one just because there will be a lot of people there even though there may be a bit less than expected. I do like the idea of having your written update though from client teams. So that we can still get a status update and I'm happy to keep. I'm not American. So I'm happy to do the one on US Thanksgiving, the week after that. And or to move it to or to move it to like Wednesday if that means more people show up. So either of those is fine for me. Yeah and maybe I don't know maybe we can get teams to chime in on the Discord. If they have a preference but yeah I agree like skipping two might not be ideal. So we can maybe do next week's async get an update from teams and then figure out the best day for the week after that. Do people think that make sense? Okay I'll post something in the Discord get some more feedback from client teams. Oh now there's more and more support for having the calls. Okay I'm fine either way. I don't know Danny, do you want to do a quick call next week?  
-
-**Danny** [32:53](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1973s): I don't mind, I'm comfortable either way. I might not live stream it given my remote capabilities and setup. I might even take the call from a phone but. 
-
-**Tim Beiko** [33:12](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=1992s): I think we can probably find someone to live stream it. Yeah Okay then let's keep both calls I guess. Okay let's default to this let's keep both calls. If people if like a whole team cannot make a call and share a written update on the agenda and we can kind of point it out at least on the call but there will be a call. And we'll try our best to live stream it but worst case we'll just upload the zoom recording later. And yeah if you're team can't make it just share an update.
-
-**Danno** [33:50](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=2030s): When I toss up the agenda I'll make a comment too. If you can attend to share it, update in the agenda.  
-
-
-**Tim Beiko** [34:01](https://www.youtube.com/watch?v=TQ2XEvMzvFg&t=2041s): Sweet anything else? Oh and I guess maybe the only one I just wanted to check do we want the testing call Monday as well or do we I especially given these All core Devss have become shorter. I would lean towards cancelling next Monday's testing call though and just having ACDC next Thursday ACDE the Thursday after that and then whichever next I think the next testing call was scheduled for the Monday after that one. So November 27th but I think having just one syn call next week is probably sufficient. Does anyone think we should have the testing call as well on Monday? 
-
-Okay cool. So let's do that, we'll add a note in the agenda and we'll share something in the Discord. Thank you Ben for pushing us to stay on track anything else anyone wanted to discuss. Okay well thanks everyone I will see you all at or most of you at devconnect next week. And then we'll see everyone on ACDC whether you're at devconnect or not next Thursday talk to you all soon. Thanks bye.
-
-# Attendees
-
-* Tim Beiko
-* Guillaume
-* FLCL
-* Ben Edgington
-* Paritosh
-* Danno Ferrin
-* Echo
-* Devconnect Berlin
-* Justin Traglia
+## Attendees
 * Pooja Ranjan
-* Daniel Lehmer
-* Gajinder
-* Damian
-* Piotr
-* Matt Nelson
-* Fabio Di Fabio
-* Enrico Del Fante
-* Hsiao-Wei Wang
-* Stefan Bratanov
-* Ayman
-* Tukasz Rozmej
-* Tomasz Stariczak
-* Danny
-* Dankrad Feist
-* Roberto B
-* Mehdi Aouadi
-* Marcin Sobczak
-* Mario Vega
-* Denis Kolodin
-* Ameziane Hamlat
-* Andrew Ashikhmin
-* Gabriel Fukushima
-* Trent
-* Spencer -tb
+* George Hervey
+* Haresh Gedia
 
-### Next meeting [ 23rd November, 14:00-15:30 UTC]
+## The date for the next meeting is Dec 5, 2023
+
 
 
